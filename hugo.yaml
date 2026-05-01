@@ -1,6 +1,6 @@
-baseURL: hugo.FoolishLee.com
+baseURL: www.foolishlee.com
 locale: en-us
-title: FoolishLee - Zen
+title: www.FoolishLee.com
 theme: zen
 
 caches:
