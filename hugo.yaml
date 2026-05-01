@@ -2,3 +2,9 @@ baseURL: hugo.FoolishLee.com
 locale: en-us
 title: FoolishLee - Zen
 theme: zen
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+
