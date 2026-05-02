@@ -1,7 +1,7 @@
 baseURL: www.foolishlee.com
 locale: en-us
 title: www.FoolishLee.com
-theme: zen
+theme: hugo-theme-fluidity
 
 caches:
   images:
