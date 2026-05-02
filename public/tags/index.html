@@ -1,199 +1,446 @@
-<!DOCTYPE html>
-<html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=3383&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<meta name="color-scheme" content="dark light">
-<script>
-  (() => {
-    try {
-      const storedTheme = localStorage.getItem('color-theme')
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-      const isDark = storedTheme ? storedTheme === 'dark' : prefersDark
-      document.documentElement.classList.toggle('dark', isDark)
-    } catch (_) {}
-  })()
-</script>
-<meta name="description" content="" />
-<meta name="author" content="">
-<meta name="keywords" content="">
+<!doctype html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=8378&amp;path=livereload" data-no-instant defer></script>
+<title>Tags | FoolishLee</title>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href=" /favicon/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta
+    property="og:title"
+    content="Tags"
+  />
+  
+    
+    
+      
+        <link rel="stylesheet" href="/css/style.css" />
+      
+    
+  
+  
 
-<link rel="canonical" href="//localhost:3383/tags/" /><link rel="alternate" type="application/rss+xml" href="//localhost:3383/tags/index.xml" title="www.FoolishLee.com"><!-- open graph --><meta property="og:type" content="website" />
-<meta property="og:description" content="" />
-<meta property="og:title" content="Tags" />
-<meta property="og:site_name" content="www.FoolishLee.com" />
-<meta property="og:image:type" content="image/jpeg" />
-<meta property="og:url" content="//localhost:3383/tags/" />
-<meta property="og:locale" content="en-us" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Tags | www.FoolishLee.com" />
-<meta name="twitter:description" content="" />
-<meta name="twitter:domain" content="//localhost:3383/tags/" />
 
-<title>Tags | www.FoolishLee.com</title>
+  
 
-<link rel="icon" href="//localhost:3383/favicon.ico"><!-- Stylesheets ---><link rel="stylesheet" href="/css/style.css" /><!-- Script --><script src="/js/main.js"></script><!-- Components -->
+<meta name="description" content="Blonde theme for Hugo." />
+<meta property="og:site_name" content="FoolishLee" />
+<meta property="og:description" content="Blonde theme for Hugo." />
+<meta property="og:url" content="http://localhost:8378/tags/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="" />
+
+  <link rel="canonical" href="http://localhost:8378/tags/" />
+
+<meta name="twitter:description" content="Blonde theme for Hugo." />
+<meta property="article:published_time" content="" />
+
+
+
+
+
+
+  <meta property="og:image" content="http://localhost:8378/" />
+  <meta
+    property="og:image:url"
+    content="http://localhost:8378/"
+  />
+
+
+  
+  <i class="dark hidden"></i>
 </head>
-<body class="min-h-screen">
-  <div id="fluidity-theme-container">
-    <header class="relative z-50"><div
-  class="bg-white/70 dark:bg-neutral-900/70 backdrop-blur-md border-b border-blue-100 dark:border-blue-950 shadow-sm">
-  <div class="container mx-auto">
-    <div class="flex justify-between items-center py-5 px-4">
-      <div class="text-2xl">
-        <a href="//localhost:3383/" class="flex items-center gap-2"><span class="font-semibold relative group">
-            <span
-              class="bg-clip-text text-transparent bg-gradient-to-r 
-              from-blue-600 via-cyan-500 to-blue-500
-              dark:from-blue-400 dark:via-cyan-400 dark:to-blue-300
-              hover:from-blue-500 hover:via-cyan-400 hover:to-blue-400
-              dark:hover:from-blue-300 dark:hover:via-cyan-300 dark:hover:to-blue-200
-              transition-all duration-300">www.FoolishLee.com</span>
-            <span
-              class="absolute -bottom-0.5 left-0 w-full h-[4px] 
-              bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent
-              dark:via-cyan-400/20
-              transform scale-x-0 group-hover:scale-x-100
-              transition-transform duration-500 ease-out
-              blur-[0.5px]"></span>
-          </span>
-        </a>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><div class="bg-gray-800 shadow-sm">
+  <div class="container max-w-7xl mr-auto ml-auto">
+    <nav class="flex items-center justify-between flex-wrap px-6 py-4">
+      <div class="flex items-center flex-no-shrink text-white mr-6">
+        <a href="http://localhost:8378/"
+          >
+            <span class="font-semibold text-xl tracking-tight"
+              >FoolishLee</span
+            >
+          </a
+        >
       </div>
+      <div class="flex md:hidden">
+        <div class="py-2">
+          <button
+            onclick="toggleDarkMode()"
+            class="focus-visible:outline-none mr-1 text-white/80 hover:text-white transition-colors duration-200 cursor-pointer"
+            aria-label="Darkmode Toggle Button"
+          >
+            <span id="icon-moon"
+              ><span
+      class="inline-flex align-middle pb-0.5 text-lg"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Z"/></svg></span
+    ></span
+>
+</span
+            >
+            <span id="icon-sun" class="hidden"
+              ><span
+      class="inline-flex align-middle pb-0.5 text-lg"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm113-170q-70-70-70-170t70-170q70-70 170-70t170 70q70 70 70 170t-70 170q-70 70-170 70t-170-70Z"/></svg></span
+    ></span
+>
+</span
+            >
+          </button>
+          <span class="text-white">|</span>
+        </div>
+        <button
+          id="hamburgerbtn"
+          class="flex items-center px-3 py-2 text-white/80 hover:text-white transition-colors duration-200"
+          aria-label="Hamburger Button"
+        >
+          <span
+      class="inline-flex align-middle pb-0.5 text-2xl"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></span
+    ></span
+>
 
-      <div class="flex relative items-center gap-0.5"><button id="mobile-menu-button" class="fluidity-header-icon block md:hidden" aria-label="Toggle menu" aria-expanded="false"><svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="currentColor"
-  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
-</button>
-        <button id="theme-toggle" aria-label="Toggle theme" class="fluidity-header-icon">
-          <div id="theme-toggle-dark-icon" class="hidden"><svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="currentColor"
-  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path
-      d="M20.0258 17.0014C17.2639 21.7851 11.1471 23.4241 6.3634 20.6622C5.06068 19.9101 3.964 18.8926 3.12872 17.6797C2.84945 17.2741 3.0301 16.7141 3.49369 16.5482C7.26112 15.1997 9.27892 13.6372 10.4498 11.4021C11.6825 9.04908 12.001 6.47162 11.1387 2.93862C11.0195 2.45008 11.4053 1.98492 11.9075 2.01186C13.4645 2.09539 14.9856 2.54263 16.3649 3.33903C21.1486 6.10088 22.7876 12.2177 20.0258 17.0014ZM11.7785 12.0981C10.5272 14.4867 8.46706 16.1972 4.96104 17.597C5.5693 18.2929 6.29275 18.8894 7.1134 19.3632C11.1796 21.7108 16.3791 20.3176 18.7267 16.2514C21.0744 12.1852 19.6812 6.98571 15.6149 4.63807C14.7379 4.1317 13.7951 3.79168 12.8228 3.62253C13.4699 7.00652 13.0525 9.66622 11.7785 12.0981Z" /></svg>
-</div>
-          <div id="theme-toggle-light-icon" class="hidden"><svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="currentColor"
-  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path
-      d="M12 2C12.4142 2 12.75 2.33579 12.75 2.75V4.25C12.75 4.66421 12.4142 5 12 5C11.5858 5 11.25 4.66421 11.25 4.25V2.75C11.25 2.33579 11.5858 2 12 2ZM12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17ZM12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12C15.5 13.933 13.933 15.5 12 15.5ZM21.25 12.75C21.6642 12.75 22 12.4142 22 12C22 11.5858 21.6642 11.25 21.25 11.25H19.75C19.3358 11.25 19 11.5858 19 12C19 12.4142 19.3358 12.75 19.75 12.75H21.25ZM12 19C12.4142 19 12.75 19.3358 12.75 19.75V21.25C12.75 21.6642 12.4142 22 12 22C11.5858 22 11.25 21.6642 11.25 21.25V19.75C11.25 19.3358 11.5858 19 12 19ZM4.25 12.75C4.66421 12.75 5 12.4142 5 12C5 11.5858 4.66421 11.25 4.25 11.25H2.75C2.33579 11.25 2 11.5858 2 12C2 12.4142 2.33579 12.75 2.75 12.75H4.25ZM4.21967 4.22004C4.51256 3.92715 4.98744 3.92715 5.28033 4.22004L6.78033 5.72004C7.07322 6.01294 7.07322 6.48781 6.78033 6.7807C6.48744 7.0736 6.01256 7.0736 5.71967 6.7807L4.21967 5.2807C3.92678 4.98781 3.92678 4.51294 4.21967 4.22004ZM5.28033 19.7807C4.98744 20.0736 4.51256 20.0736 4.21967 19.7807C3.92678 19.4878 3.92678 19.0129 4.21967 18.72L5.71967 17.22C6.01256 16.9271 6.48744 16.9271 6.78033 17.22C7.07322 17.5129 7.07322 17.9878 6.78033 18.2807L5.28033 19.7807ZM19.7803 4.22004C19.4874 3.92715 19.0126 3.92715 18.7197 4.22004L17.2197 5.72004C16.9268 6.01294 16.9268 6.48781 17.2197 6.7807C17.5126 7.0736 17.9874 7.0736 18.2803 6.7807L19.7803 5.2807C20.0732 4.98781 20.0732 4.51294 19.7803 4.22004ZM18.7197 19.7807C19.0126 20.0736 19.4874 20.0736 19.7803 19.7807C20.0732 19.4878 20.0732 19.0129 19.7803 18.72L18.2803 17.22C17.9874 16.9271 17.5126 16.9271 17.2197 17.22C16.9268 17.5129 16.9268 17.9878 17.2197 18.2807L18.7197 19.7807Z" /></svg>
-</div>
         </button>
       </div>
-    </div>
+      <div
+        class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto"
+        id="mobileMenu"
+      >
+        <div class="text-sm lg:grow"></div>
+        <div class="flex flex-col md:flex-row gap-2">
+          
+            <a
+              href="/"
+              class="no-underline font-medium text-sm block sm:inline-block sm:mt-0 text-white/80 hover:text-white mr-4 py-2 sm:py-0 transition-colors duration-200"
+            >
+              Home
+            </a>
+          
+            <a
+              href="/about/"
+              class="no-underline font-medium text-sm block sm:inline-block sm:mt-0 text-white/80 hover:text-white mr-4 py-2 sm:py-0 transition-colors duration-200"
+            >
+              About
+            </a>
+          
+            <a
+              href="/contact/"
+              class="no-underline font-medium text-sm block sm:inline-block sm:mt-0 text-white/80 hover:text-white mr-4 py-2 sm:py-0 transition-colors duration-200"
+            >
+              Contact
+            </a>
+          
+        </div>
+        <div class="text-white hidden md:block">
+          <span>|</span>
+          <button
+            onclick="toggleDarkMode()"
+            class="focus-visible:outline-none hover:opacity-50 duration-200 ml-2 cursor-pointer"
+            aria-label="Darkmode Toggle Button"
+          >
+            <span id="icon2-moon"
+              ><span
+      class="inline-flex align-middle pb-0.5 text-lg"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Z"/></svg></span
+    ></span
+>
+</span
+            >
+            <span id="icon2-sun" class="hidden"
+              ><span
+      class="inline-flex align-middle pb-0.5 text-lg"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 -960 960 960" width="1em" fill="currentColor"><path d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm113-170q-70-70-70-170t70-170q70-70 170-70t170 70q70 70 70 170t-70 170q-70 70-170 70t-170-70Z"/></svg></span
+    ></span
+>
+</span
+            >
+          </button>
+        </div>
+      </div>
+    </nav>
   </div>
 </div>
-</header>
-    <main class="flex-1 relative z-[1]"><div class="fluidity-container-1">
-    <div class="mb-4 lg:mb-8">
-      <h1 class="fluidity-page-title text-3xl group flex items-center gap-2 mb-1">
-        <span class="fluidity-page-title-icon"><svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="currentColor"
-  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path
-      d="M17.5 6.5C17.5 7.19036 16.9404 7.75 16.25 7.75C15.5596 7.75 15 7.19036 15 6.5C15 5.80964 15.5596 5.25 16.25 5.25C16.9404 5.25 17.5 5.80964 17.5 6.5ZM10.5076 2.89817C11.1121 2.32164 11.9154 2 12.7507 2H18.2496C19.7684 2 20.9996 3.23122 20.9996 4.75V9.70264C20.9996 10.5737 20.65 11.4083 20.0291 12.0192L13.0837 18.8535C12.2045 19.7186 10.7927 19.7146 9.91845 18.8445L3.66184 12.6177C2.76479 11.7249 2.78029 10.2682 3.69613 9.39468L10.5076 2.89817ZM12.7507 3.5C12.3009 3.5 11.8684 3.67319 11.5429 3.98363L4.73139 10.4801C4.42611 10.7713 4.42095 11.2569 4.71996 11.5545L10.9766 17.7813C11.268 18.0713 11.7386 18.0727 12.0317 17.7843L18.9771 10.95C19.3114 10.621 19.4996 10.1717 19.4996 9.70264V4.75C19.4996 4.05964 18.94 3.5 18.2496 3.5H12.7507ZM20.7309 12.732L19.2558 14.1834C19.216 14.2377 19.1713 14.2894 19.1217 14.3381L13.7883 19.5665C13.5787 19.772 13.3482 19.9434 13.1037 20.0807C11.8661 20.7802 10.2687 20.6035 9.21341 19.5532L7.28204 17.6311L4.87078 15.2451C4.83207 15.2068 4.79639 15.1666 4.76374 15.1248L3.13495 13.5037C2.82374 14.4607 3.05086 15.5545 3.81573 16.3113L8.17213 20.6221C10.0168 22.4475 12.9851 22.4544 14.8384 20.6377L20.1717 15.4093C20.9449 14.6514 21.1728 13.5543 20.8628 12.5962C20.82 12.6423 20.776 12.6876 20.7309 12.732Z" /></svg>
-</span>
-        <span class="relative">Tags<span class="fluidity-page-title-line"></span>
-        </span>
-      </h1>
-      <p class="fluidity-page-desc">Total 0 tags</p>
-    </div>
+<style>
+  .active {
+    display: block;
+  }
+</style>
 
-    <div class="fluidity-box-1 p-3 lg:p-6">
-      <div class="flex flex-wrap gap-2 lg:gap-3 justify-center"></div>
-    </div>
-  </div></main>
-    <footer class="relative z-50"><div
-  class="mt-16 border-t border-neutral-200/80 dark:border-neutral-800/20 
-            bg-gradient-to-b from-white/80 via-sky-50/30 to-blue-50/20
-            dark:from-neutral-900/90 dark:via-neutral-900/50 dark:to-neutral-800/30 
-            backdrop-blur-md">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 lg:gap-8">
+<script>
+  let hamburger = document.getElementById("hamburgerbtn");
+
+  let mobileMenu = document.getElementById("mobileMenu");
+
+  hamburger.addEventListener("click", function () {
+    mobileMenu.classList.toggle("active");
+  });
+</script>
+<div
+        class="container max-w-7xl mx-auto mt-4 grow px-5 lg:px-0"
+        id="content"
+      >
+        <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+  
+  <main class="col-span-3 lg:col-span-2 mb-3">
+  
+    
+    <h2 class="text-3xl dark:text-white font-semibold">
       
-      <div class="col-span-1 md:col-span-2">
-        <h3 class="text-lg sm:text-xl font-semibold text-neutral-900 dark:text-neutral-50 mb-4">About</h3>
-        <p class="text-slate-600 dark:text-slate-300 italic text-sm sm:text-base"></p>
-      </div>
-
+      Tags: Tags
       
-      <div>
-        <h3 class="text-lg sm:text-xl font-semibold text-neutral-900 dark:text-neutral-50 mb-4">Sections</h3><ul class="space-y-2 text-slate-600 dark:text-slate-300 text-sm sm:text-base"></ul>
-      </div>
+    </h2>
+    
+    
+    
+    
+    
+    
+    
 
+
+  </main>
+  
+    <div
+  class="
+    col-span-3 lg:col-span-1
+  "
+>
+  
+  
       
-      <div>
-        <h3 class="text-lg sm:text-xl font-semibold text-neutral-900 dark:text-neutral-50 mb-4">Connect</h3>
-        <ul class="space-y-2"><li>
-    <a
-      href="/index.xml"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="group flex items-center gap-2 
-            text-slate-600 hover:text-sky-600 
-            dark:text-slate-300 dark:hover:text-sky-300 
-            transition-all duration-300 ease-in-out">
-      <span class="transform group-hover:scale-110 transition-transform duration-300"><svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="currentColor"
-  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path
-      d="M3 3C12.9411 3 21 11.0589 21 21H18C18 12.7157 11.2843 6 3 6V3ZM3 10C9.07513 10 14 14.9249 14 21H11C11 16.5817 7.41828 13 3 13V10ZM3 17C5.20914 17 7 18.7909 7 21H3V17Z"></path></svg>
-</span>
-      <span class="transform group-hover:translate-x-1 transition-transform duration-300">RSS Feed</span>
-    </a>
-  </li></ul>
-      </div>
-    </div>
-
-    <div class="relative flex justify-center my-4">
-      <div
-        class="absolute inset-x-0 top-1/2 h-[1px] -translate-y-1/2 bg-gradient-to-r from-transparent via-sky-200 dark:via-sky-800 to-transparent opacity-50 blur-[0.5px]"></div>
-      <span
-        class="relative z-10 rounded-full 
-                   bg-sky-50 dark:bg-neutral-900
-                   px-4 py-0.5
-                   text-neutral-600 dark:text-neutral-400 
-                   text-xs font-mono italic">
-        Site built with
-        <a
-          rel="nofollow"
-          class="underline decoration-neutral-300 
-                  hover:text-sky-600 dark:hover:text-sky-400 
-                  transition-colors duration-300"
-          target="_blank"
-          href="https://gohugo.io">
-          Hugo
-        </a>
-        &&
-        <a
-          class="underline decoration-neutral-300 
-                  hover:text-sky-600 dark:hover:text-sky-400 
-                  transition-colors duration-300"
-          rel="nofollow"
-          target="_blank"
-          href="https://github.com/wayjam/hugo-theme-fluidity">
-          Theme Fluidity
-        </a>
-      </span>
-    </div>
+      <div class="mb-3">
+  <form
+    class="widget-search__form"
+    role="search"
+    method="get"
+    action="https://google.com/search"
+  >
+    <label>
+      <input
+        class="w-full p-3 focus:outline-none rounded-xl shadow-sm text-sm bg-white dark:bg-warmgray-900 text-gray-900 dark:text-white dark:placeholder-gray-300"
+        type="search"
+        placeholder="Search..."
+        value=""
+        name="q"
+        aria-label="Search"
+      />
+    </label>
+    <input class="hidden" type="submit" value="Search" />
+    <input type="hidden" name="sitesearch" value="http://localhost:8378/" />
+  </form>
+</div>
 
     
-    <div class="text-center text-neutral-600 dark:text-neutral-400 font-sans text-sm sm:text-base">
-      <p>
-        &copy; 2026 www.FoolishLee.com.All Rights Reserved.</p>
+      
+      <div
+  class="bg-white rounded-xl shadow-sm mb-4 overflow-hidden dark:bg-warmgray-900"
+>
+  <div class="px-5 py-4 border-b border-gray-100 dark:border-warmgray-700">
+    <p
+      class="text-xs font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400"
+    >
+      Archives
+    </p>
+  </div>
+  
+    <div class="divide-y divide-gray-100 dark:divide-warmgray-700">
+      
+    </div>
+  
+</div>
+
+    
+      
+      
+
+    
+      
+      
+
+    
+      
+      
+  <div
+    class="bg-white rounded-xl shadow-sm mb-4 overflow-hidden dark:bg-warmgray-900"
+  >
+    <div class="px-5 py-4 border-b border-gray-100 dark:border-warmgray-700">
+      <p
+        class="text-xs font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400"
+      >
+        Social
+      </p>
+    </div>
+    <div class="p-4 flex flex-wrap gap-2">
+      
+        
+          <a
+            href="https://github.com/opera7133"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            class="inline-flex items-center gap-1.5 bg-gray-100 text-gray-700 rounded-full px-3 py-1.5 text-sm font-medium hover:bg-sky-50 hover:text-sky-700 transition-colors duration-150 dark:bg-warmgray-800 dark:text-gray-300 dark:hover:bg-warmgray-700"
+          >
+            
+              <span
+      class="inline-flex align-middle pb-0.5 text-base"
+      ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+</svg></span
+    ></span
+>
+
+            
+            <span>GitHub</span>
+          </a>
+        
+      
+        
+          <a
+            href="https://x.com/scgame_m"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter / X"
+            class="inline-flex items-center gap-1.5 bg-gray-100 text-gray-700 rounded-full px-3 py-1.5 text-sm font-medium hover:bg-sky-50 hover:text-sky-700 transition-colors duration-150 dark:bg-warmgray-800 dark:text-gray-300 dark:hover:bg-warmgray-700"
+          >
+            
+              <span
+      class="inline-flex align-middle pb-0.5 text-base"
+      ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg></span
+    ></span
+>
+
+            
+            <span>Twitter / X</span>
+          </a>
+        
+      
+        
+          <a
+            href="https://www.youtube.com/@wamo"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+            class="inline-flex items-center gap-1.5 bg-gray-100 text-gray-700 rounded-full px-3 py-1.5 text-sm font-medium hover:bg-sky-50 hover:text-sky-700 transition-colors duration-150 dark:bg-warmgray-800 dark:text-gray-300 dark:hover:bg-warmgray-700"
+          >
+            
+              <span
+      class="inline-flex align-middle pb-0.5 text-base"
+      ><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+</svg></span
+    ></span
+>
+
+            
+            <span>YouTube</span>
+          </a>
+        
+      
     </div>
   </div>
+
+
+    
+      
+      
+
+
+    
+  
 </div>
-</footer>
+
+  
+</div>
+</div>
+      </div><footer class="bg-gray-800 text-white p-6">
+  
+  <div class="container max-w-7xl mr-auto ml-auto">
+    <p>
+      &copy;
+      2026
+      <a href="http://localhost:8378/" class="duration-200 hover:opacity-50"
+        >FoolishLee</a
+      >
+    </p>
+    <p>
+      Powered by
+      <a href="https://gohugo.io/" class="duration-200 hover:opacity-50">Hugo</a
+      >, Theme
+      <a
+        href="https://github.com/opera7133/Blonde"
+        class="duration-200 hover:opacity-50"
+        >Blonde</a
+      >.
+    </p>
   </div>
-</body>
+  
+  <script>
+    function setDarkModeIcons(isDark) {
+      var moonIcon1 = document.getElementById("icon-moon");
+      var sunIcon1 = document.getElementById("icon-sun");
+      var moonIcon2 = document.getElementById("icon2-moon");
+      var sunIcon2 = document.getElementById("icon2-sun");
+      if (moonIcon1) moonIcon1.classList.toggle("hidden", isDark);
+      if (sunIcon1) sunIcon1.classList.toggle("hidden", !isDark);
+      if (moonIcon2) moonIcon2.classList.toggle("hidden", isDark);
+      if (sunIcon2) sunIcon2.classList.toggle("hidden", !isDark);
+    }
+    
+    if (
+      document.documentElement.classList.contains("dark") ||
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      setDarkModeIcons(true);
+      document.documentElement.classList.add("dark");
+    } else {
+      setDarkModeIcons(false);
+      document.documentElement.classList.remove("dark");
+    }
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains("dark")) {
+        setDarkModeIcons(false);
+        document.documentElement.classList.remove("dark");
+        localStorage.theme = "light";
+      } else {
+        setDarkModeIcons(true);
+        document.documentElement.classList.add("dark");
+        localStorage.theme = "dark";
+      }
+    }
+  </script>
+</footer>
+</div>
+  </body>
 </html>

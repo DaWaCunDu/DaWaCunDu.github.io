@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss
-  version="2.0"
-  xmlns:atom="http://www.w3.org/2005/Atom"
-  xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on www.FoolishLee.com</title>
-    <link>//localhost:3383/tags/</link>
-    <description>Recent content in Tags on www.FoolishLee.com</description>
+    <title>Tags on FoolishLee</title>
+    <link>http://localhost:8378/tags/</link>
+    <description>Recent content in Tags on FoolishLee</description>
     <generator>Hugo</generator>
-    <language>en-us</language><atom:link href="//localhost:3383/tags/index.xml" rel="self" type="application/rss+xml" /></channel>
+    <language>en</language>
+    <atom:link href="http://localhost:8378/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
 </rss>
