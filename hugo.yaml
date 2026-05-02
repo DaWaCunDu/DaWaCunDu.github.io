@@ -1,7 +1,8 @@
 baseURL: www.foolishlee.com
 locale: en-us
 title: www.FoolishLee.com
-theme: hugo-theme-fluidity
+#theme: hugo-theme-fluidity
+theme: Blonde
 
 caches:
   images:
